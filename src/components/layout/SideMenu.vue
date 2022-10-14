@@ -5,10 +5,16 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:modelValue'])
 
-const { t } = useI18n()
-
 const toggleDrawer = () => {
   emit('update:modelValue', !props.modelValue)
+}
+
+const { t, availableLocales, locale } = useI18n()
+
+const toggleLocales = () => {
+  // change to some real logic
+  const locales = availableLocales
+  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }
 </script>
 
@@ -27,23 +33,30 @@ const toggleDrawer = () => {
           <div icon-btn ma-2 i-maki-cross invisible />
         </div>
         <div b-b w-full h-1 />
-        <nav flex flex-col text-xl gap-4 pt-4>
-          <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-            <div>{{ t('button.home') }}</div>
+        <nav flex flex-col gap-4 pt-4>
+          <RouterLink class="icon-btn mx-2 flex flex-row" to="/" label="Home" :title="t('button.home')">
+            <div i-carbon-campsite /> Home
           </RouterLink>
           <div b-b w-full h-1 />
-          <RouterLink class="icon-btn mx-2" to="/products" :title="t('button.products')">
-            <div>{{ t('button.products') }}</div>
+          <button class="icon-btn mx-2 !outline-none flex flex-row" :title="t('button.toggle_dark')" @click="toggleDark()">
+            <div i="carbon-sun dark:carbon-moon" /> Theme
+          </button>
+          <div b-b w-full h-1 />
+          <a class="icon-btn mx-2 flex flex-row" :title="t('button.toggle_langs')" @click="toggleLocales()">
+            <div i-carbon-language /> Language
+          </a>
+          <div b-b w-full h-1 />
+          <RouterLink class="icon-btn mx-2 flex flex-row" to="/about" :title="t('button.about')">
+            <div i-carbon-dicom-overlay /> Vue content
           </RouterLink>
           <div b-b w-full h-1 />
-          <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-            <div>{{ t('button.about') }}</div>
-          </RouterLink>
+          <a class="icon-btn mx-2 flex flex-row" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+            <div i-carbon-logo-github /> Vitesse Github
+          </a>
           <div b-b w-full h-1 />
-          <RouterLink class="icon-btn mx-2" to="/contact" :title="t('button.contact')">
-            <div>{{ t('button.contact') }}</div>
-          </RouterLink>
-          <div b-b w-full h-1 />
+          <a class="icon-btn mx-2 flex flex-row" rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank" title="GitHub">
+            <div i-carbon-logo-github /> Vitesse-Basic-Layout
+          </a>
         </nav>
       </div>
     </div>

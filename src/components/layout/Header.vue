@@ -5,11 +5,11 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:modelValue'])
 
-const { t, availableLocales, locale } = useI18n()
-
 const toggleDrawer = () => {
   emit('update:modelValue', !props.modelValue)
 }
+
+const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
   // change to some real logic
@@ -31,20 +31,24 @@ const toggleLocales = () => {
     </div>
     <nav text-xl class="lt-sm-hidden">
       <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-        <div>{{ t('button.home') }}</div>
+        <div i-carbon-campsite />
       </RouterLink>
 
-      <RouterLink class="icon-btn mx-2" to="/" :title="t('button.products')">
-        <div>{{ t('button.products') }}</div>
+      <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
+        <div i="carbon-sun dark:carbon-moon" />
+      </button>
+
+      <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
+        <div i-carbon-language />
+      </a>
+
+      <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
+        <div i-carbon-dicom-overlay />
       </RouterLink>
 
-      <RouterLink class="icon-btn mx-2" to="/" :title="t('button.about')">
-        <div>{{ t('button.about') }}</div>
-      </RouterLink>
-
-      <RouterLink class="icon-btn mx-2" to="/" :title="t('button.contact')">
-        <div>{{ t('button.contact') }}</div>
-      </RouterLink>
+      <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+        <div i-carbon-logo-github />
+      </a>
     </nav>
     <div class="pl-2 pr-4 w-25">
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
