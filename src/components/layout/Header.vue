@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   modelValue?: boolean
+  backgroundClass: string
 }>()
 
 const emit = defineEmits(['update:modelValue'])
@@ -19,7 +20,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <div fixed class="flex flex-row w-full justify-between pt-4 pb-1 bg-blue">
+  <div fixed class="flex flex-row w-full justify-between pt-4 pb-1" :class="backgroundClass">
     <div class="pl-4 pr-2 w-25 sm-hidden">
       <div i-fa6-solid-bars-staggered icon-btn @click="toggleDrawer" />
     </div>
