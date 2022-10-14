@@ -12,7 +12,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div>
+  <div flex flex-col h-full items-center>
     <div text-4xl>
       <div i-carbon-campsite inline-block />
     </div>
