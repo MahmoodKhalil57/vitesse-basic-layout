@@ -1,9 +1,20 @@
+<script setup>
+const drawerOpen = $ref(false)
+const toggleDrawer = () => {
+  // eslint-disable-next-line no-const-assign
+  drawerOpen = !drawerOpen
+}
+</script>
+
 <template>
-  <main class="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-    <RouterView />
-    <Footer />
-    <div class="mt-5 mx-auto text-center opacity-75 dark:opacity-50 text-sm">
-      [Home Layout]
+  <main class="flex flex-col justify-between min-h-screen">
+    <div />
+    <div>
+      <RouterView />
     </div>
+
+    <Header v-model="drawerOpen" />
+    <Footer />
+    <SideMenu v-model="drawerOpen" class="test" />
   </main>
 </template>
