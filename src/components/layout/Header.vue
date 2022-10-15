@@ -19,7 +19,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <div fixed flex flex-row w-full justify-center pt-4 pb-1>
+  <div flex flex-row w-full justify-center pt-4 pb-1>
     <div pl-4 pr-2 w-full sm-hidden>
       <div i-fa6-solid-bars-staggered icon-btn @click="toggleDrawer" />
     </div>
