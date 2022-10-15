@@ -50,6 +50,10 @@ const toggleLocales = () => {
       <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
         <div i-carbon-logo-github />
       </a>
+
+      <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank" title="GitHub">
+        <div i-carbon-logo-github c-red-800 />
+      </a>
     </nav>
     <div class="pl-2 pr-4 w-25">
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
