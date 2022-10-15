@@ -11,7 +11,7 @@ An attempt at a personalized layout
 <br>
 
 <p align='center'>
-<a href="https://vitess-basic-layout.netlify.app/">Live Demo</a>
+<a href="https://vitesse-basic-layout.netlify.app/">Live Demo</a>
 <br>
 <a href="https://github.com/MahmoodKhalil57/vitesse-basic-layout">Git</a>
 </p>
