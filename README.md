@@ -43,5 +43,5 @@ An attempt at a personalized layout
 
 - Custom header
 - Custom footer
-- Custom sidemenu
+- Custom sidemenu (resize screen width to narrow to get option to toggle sidemenu)
 - Tried my best to only make necessary changes
