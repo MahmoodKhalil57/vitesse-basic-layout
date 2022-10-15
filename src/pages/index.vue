@@ -14,7 +14,7 @@ const { t } = useI18n()
 <template>
   <div flex flex-col h-full items-center>
     <div text-4xl>
-      <div i-carbon-campsite inline-block />
+      <div i-fa6-solid-paint-roller inline-block />
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
