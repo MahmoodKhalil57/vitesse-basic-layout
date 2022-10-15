@@ -22,5 +22,5 @@ useHead({
 </script>
 
 <template>
-  <RouterView />
+  <RouterView overflow-x-hidden />
 </template>
