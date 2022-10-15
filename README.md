@@ -37,3 +37,11 @@ An attempt at a personalized layout
 <br>
 
 <br>
+
+
+# Changes from Vitesse
+
+- Custom header
+- Custom footer
+- Custom sidemenu
+- Tried my best to only make necessary changes
