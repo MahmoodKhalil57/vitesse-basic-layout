@@ -30,7 +30,9 @@ const toggleLocales = () => {
         <div flex flex-col w-full justify-center>
           <div flex flex-row justify-between w-full>
             <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="toggleDrawer" />
-            <Logo ma-2 />
+            <RouterLink ma-2 icon-btn to="/" :title="t('button.home')">
+              <Logo />
+            </RouterLink>
             <div w-full ml-2 flex justify-end />
           </div>
           <div b-b w-full h-1 />
