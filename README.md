@@ -1,7 +1,7 @@
 # Built on
 
 <p align='center'>
-  <img src='/src/assets/VitesseBasicLayout.jpg' alt='Vitesse Basic Layout - Opinionated Vitesse Starter Template' width='600'/>
+  <img src='/src/assets/VitesseBasicLayout.png' alt='Vitesse Basic Layout - Opinionated Vitesse Starter Template' width='600'/>
 </p>
 
 <p align='center'>
