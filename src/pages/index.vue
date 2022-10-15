@@ -22,6 +22,11 @@ const { t } = useI18n()
       </a>
     </p>
     <p>
+      <a rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank">
+        Vitesse-Basic-Layout
+      </a>
+    </p>
+    <p>
       <em text-sm opacity-75>{{ t('intro.desc') }}</em>
     </p>
 
