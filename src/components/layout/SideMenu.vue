@@ -26,7 +26,7 @@ const toggleLocales = () => {
       <div absolute class="backdrop" @click="toggleDrawer">
         <div h-screen w-screen bg-black op-80 />
       </div>
-      <div absolute flex flex-col items-center justify-between h-screen bg-neutral-900 class="inner w-60">
+      <div w-60 absolute flex flex-col items-center justify-between h-screen bg-neutral-900 class="inner">
         <div flex flex-col w-full justify-center>
           <div flex flex-row justify-between w-full>
             <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="toggleDrawer" />
@@ -39,30 +39,30 @@ const toggleLocales = () => {
         </div>
 
         <nav flex flex-col gap-4 pt-4 aria-label="Site menu">
-          <RouterLink class="icon-btn mx-2 flex flex-row" to="/" label="Home" :title="t('button.home')">
+          <RouterLink icon-btn mx-2 flex flex-row to="/" label="Home" :title="t('button.home')">
             <div i-carbon-campsite mr-3 /> <div>Home</div>
           </RouterLink>
           <div b-b w-full h-1 />
-          <button class="icon-btn mx-2 !outline-none flex flex-row" :title="t('button.toggle_dark')" @click="toggleDark()">
+          <button icon-btn mx-2 flex flex-row class="!outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
             <div i="carbon-sun dark:carbon-moon" mr-3 /> <div>Theme</div>
           </button>
           <div b-b w-full h-1 />
-          <a class="icon-btn mx-2 flex flex-row" :title="t('button.toggle_langs')" @click="toggleLocales()">
+          <a icon-btn mx-2 flex flex-row :title="t('button.toggle_langs')" @click="toggleLocales()">
             <div i-carbon-language mr-3 /> <div>Language</div>
           </a>
           <div b-b w-full h-1 />
-          <RouterLink class="icon-btn mx-2 flex flex-row" to="/about" :title="t('button.about')">
+          <RouterLink icon-btn mx-2 flex flex-row to="/about" :title="t('button.about')">
             <div i-carbon-dicom-overlay mr-3 /> <div>Vue content</div>
           </RouterLink>
         </nav>
         <div />
         <div />
         <nav flex flex-col gap-4 pb-4 aria-label="Git menu">
-          <a class="icon-btn mx-2 flex flex-row" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+          <a icon-btn mx-2 flex flex-row rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
             <div i-carbon-logo-github mr-3 /> <div>Vitesse Github</div>
           </a>
           <div b-b w-full h-1 />
-          <a class="icon-btn mx-2 flex flex-row" rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank" title="GitHub">
+          <a icon-btn mx-2 flex flex-row rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank" title="GitHub">
             <div i-carbon-logo-github c-red-800 mr-3 /><div> Vitesse-Basic-Layout</div>
           </a>
         </nav>

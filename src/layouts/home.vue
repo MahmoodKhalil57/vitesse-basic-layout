@@ -7,7 +7,7 @@ const toggleDrawer = () => {
 </script>
 
 <template>
-  <main class="flex flex-col justify-between min-h-screen">
+  <main flex flex-col justify-between min-h-screen>
     <div />
     <div>
       <RouterView />
@@ -15,6 +15,6 @@ const toggleDrawer = () => {
 
     <Header v-model="drawerOpen" />
     <Footer />
-    <SideMenu v-model="drawerOpen" class="test" />
+    <SideMenu v-model="drawerOpen" />
   </main>
 </template>

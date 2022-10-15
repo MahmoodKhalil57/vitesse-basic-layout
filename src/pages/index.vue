@@ -47,7 +47,7 @@ const { t } = useI18n()
       outline="none active:none"
       @keydown.enter="go"
     >
-    <label class="hidden" for="input">{{ t('intro.whats-your-name') }}</label>
+    <label hidden for="input">{{ t('intro.whats-your-name') }}</label>
 
     <div>
       <button
