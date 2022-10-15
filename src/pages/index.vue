@@ -13,7 +13,7 @@ const { t } = useI18n()
 
 <template>
   <div flex flex-col h-full w-full items-center>
-    <div flex flex-col items-center justify-center h-screen w-full bg-dark-800 p-5>
+    <section flex flex-col items-center justify-center h-screen w-full bg-dark-800 p-5>
       <div text-4xl>
         <div i-fa6-solid-paint-roller inline-block />
       </div>
@@ -59,8 +59,8 @@ const { t } = useI18n()
           {{ t('button.go') }}
         </button>
       </div>
-    </div>
-    <div flex flex-col items-center justify-center h-100 w-full bg-dark-1000 p-5>
+    </section>
+    <section flex flex-col items-center justify-center h-100 w-full bg-dark-1000 p-5>
       <div text-4xl>
         <div i-fa6-solid-paint-roller inline-block />
       </div>
@@ -106,7 +106,7 @@ const { t } = useI18n()
           {{ t('button.go') }}
         </button>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
