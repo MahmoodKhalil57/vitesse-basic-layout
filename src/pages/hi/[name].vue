@@ -10,7 +10,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <div>
+  <div flex flex-col items-center self-center>
     <div text-4xl>
       <div i-carbon-pedestrian inline-block />
     </div>
