@@ -10,7 +10,7 @@ const toggleDrawer = () => {
 const scrolled = $ref(false)
 const handleScroll = () => {
   // eslint-disable-next-line no-const-assign
-  scrolled = window.scrollY >= 100
+  scrolled = window.scrollY >= 30
 }
 
 onMounted(() => {
@@ -27,7 +27,7 @@ onMounted(() => {
       <Header v-model="drawerOpen" />
     </div>
 
-    <RouterView />
+    <RouterView pt-10 />
 
     <Footer />
     <SideMenu v-model="drawerOpen" z-2 />
