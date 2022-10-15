@@ -1,4 +1,7 @@
+@import './themeVars.css';
+@import './customClasses.css';
 @import './markdown.css';
+
 
 html,
 body,
@@ -6,10 +9,10 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  background: var(--c-bg-1);
 }
 
 html.dark {
-  background: #121212;
   color-scheme: dark;
 }
 
