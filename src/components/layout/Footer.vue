@@ -1,8 +1,8 @@
 <template>
-  <div w-screen flex flex-row justify-between pt-2 pb-4 gap-2 bg-blue-800>
-    <div ml-10 mt-5>
-      <Logo scale-350 />
-    </div>
+  <div w-screen flex sm-flex-row lt-sm-flex-col justify-center pt-4 sm-pb-4 gap-3 bg-blue-800 overflow-hidden>
+    <divflex flex lt-sm-justify-center sm-ml-10 sm-mt-8 w-full>
+      <Logo sm-scale-250 lt-sm-scale-150 />
+    </divflex>
 
     <div flex flex-col items-center>
       <a text-center min-w-70 href="mailto:mahmoodihabk@gmail.com">
@@ -17,8 +17,6 @@
       </div>
     </div>
 
-    <div ml-10 mt-5 invisible>
-      <Logo scale-350 />
-    </div>
+    <div ml-10 mt-5 w-full sm-flex sm-justify-end />
   </div>
 </template>

@@ -20,17 +20,16 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <div fixed class="flex flex-row w-full justify-between pt-4 pb-1" :class="backgroundClass">
-    <div class="pl-4 pr-2 w-25 sm-hidden">
+  <div fixed class="flex flex-row w-full justify-center pt-4 pb-1" :class="backgroundClass">
+    <div class="pl-4 pr-2 w-full sm-hidden">
       <div i-fa6-solid-bars-staggered icon-btn @click="toggleDrawer" />
     </div>
-    <div class="sm-pl-4 sm-pr-2 w-25">
-      <div />
+    <div class="sm-pl-4 sm-pr-2 sm-w-full">
       <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
         <Logo />
       </RouterLink>
     </div>
-    <nav text-xl class="lt-sm-hidden">
+    <nav text-xl class="lt-sm-hidden flex no-wrap">
       <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
         <div i-carbon-campsite />
       </RouterLink>
@@ -55,7 +54,7 @@ const toggleLocales = () => {
         <div i-carbon-logo-github c-red-800 />
       </a>
     </nav>
-    <div class="pl-2 pr-4 w-25">
+    <div class="pl-2 pr-4 w-full flex justify-end no-wrap">
       <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
         <div i="carbon-sun dark:carbon-moon" />
       </button>

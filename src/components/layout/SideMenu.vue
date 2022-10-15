@@ -27,11 +27,11 @@ const toggleLocales = () => {
         <div h-screen w-screen bg-black op-80 />
       </div>
       <div absolute flex flex-col items-center justify-between h-screen bg-neutral-900 class="inner w-60">
-        <div flex flex-col w-full>
+        <div flex flex-col w-full justify-center>
           <div flex flex-row justify-between w-full>
-            <div icon-btn ma-2 i-maki-cross @click="toggleDrawer" />
+            <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="toggleDrawer" />
             <Logo ma-2 />
-            <div icon-btn ma-2 i-maki-cross invisible />
+            <div w-full ml-2 flex justify-end />
           </div>
           <div b-b w-full h-1 />
         </div>
