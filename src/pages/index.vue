@@ -18,12 +18,12 @@ const { t } = useI18n()
     </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank">
-        Vitesse
+        [Vitesse]
       </a>
     </p>
     <p>
       <a rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank">
-        Vitesse-Basic-Layout
+        [Vitesse Basic Layout]
       </a>
     </p>
     <p>
