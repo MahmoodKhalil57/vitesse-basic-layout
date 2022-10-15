@@ -7,7 +7,7 @@ context('Basic', () => {
     cy.url()
       .should('eq', 'http://localhost:3333/')
 
-    cy.contains('[Home Layout]')
+    cy.contains('[Vitesse Basic Layout]')
       .should('exist')
 
     cy.get('#input')
@@ -15,7 +15,7 @@ context('Basic', () => {
       .url()
       .should('eq', 'http://localhost:3333/hi/Vitesse')
 
-    cy.contains('[Default Layout]')
+    cy.contains('Hi,')
       .should('exist')
 
     cy.get('[btn]')
