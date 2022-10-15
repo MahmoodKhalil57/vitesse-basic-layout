@@ -1,33 +1,24 @@
-<script setup lang="ts">
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>
-
 <template>
-  <nav flex-row justify-center text-xl flex pb-4>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
-    </RouterLink>
+  <div w-screen flex flex-row justify-between pt-2 pb-4 gap-2 bg-blue-800>
+    <div ml-10 mt-5>
+      <Logo scale-350 />
+    </div>
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
+    <div flex flex-col items-center>
+      <a text-center min-w-70 href="mailto:mahmoodihabk@gmail.com">
+        mahmoodihabk@gmail.com
+      </a>
+      <a text-center min-w-70 href="https://github.com/MahmoodKhalil57">
+        https://github.com/MahmoodKhalil57
+      </a>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
+      <div flex flex-row>
+        <div i-fa6-solid-location-dot class="pr-8 -ml-8" /> Giza, Egypt
+      </div>
+    </div>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <div i-carbon-dicom-overlay />
-    </RouterLink>
-
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
-  </nav>
+    <div ml-10 mt-5 invisible>
+      <Logo scale-350 />
+    </div>
+  </div>
 </template>
