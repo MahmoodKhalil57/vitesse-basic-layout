@@ -12,6 +12,7 @@ An attempt at a personalized layout
 
 <p align='center'>
 <a href="https://vitess-basic-layout.netlify.app/">Live Demo</a>
+<br>
 <a href="https://github.com/MahmoodKhalil57/vitesse-basic-layout">Git</a>
 </p>
 
@@ -29,6 +30,7 @@ An attempt at a personalized layout
 
 <p align='center'>
 <a href="https://vitesse.netlify.app/">Live Demo</a>
+<br>
 <a href="https://github.com/antfu/vitesse/">Git</a>
 </p>
 
