@@ -3,9 +3,13 @@
 html{
   --c-bg-1: #ffffff;
   --c-bg-2: #bbbbbb;
+
+  --c-lo-1: #008dff;
 }
 
 html.dark {
   --c-bg-1: #121212;
   --c-bg-2: #181818;
+
+  --c-lo-1: #0004a7;
 }
