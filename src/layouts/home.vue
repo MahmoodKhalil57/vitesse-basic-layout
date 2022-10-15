@@ -20,14 +20,14 @@ onMounted(() => {
 
 <template>
   <main flex flex-col justify-between min-h-screen>
-    <div z-1 class="c-sticky -mt-3">
+    <div z-1 fixed w-full class="-mt-3">
       <Transition name="custom-test">
         <div v-if="scrolled" absolute w-full h-full bg-gray-800 />
       </Transition>
       <Header v-model="drawerOpen" />
     </div>
 
-    <RouterView pt-10 />
+    <RouterView />
 
     <Footer />
     <SideMenu v-model="drawerOpen" z-2 />
