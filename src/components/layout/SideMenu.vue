@@ -61,7 +61,7 @@ const toggleLocales = () => {
           </a>
           <div b-b w-full h-1 />
           <a class="icon-btn mx-2 flex flex-row" rel="noreferrer" href="https://github.com/MahmoodKhalil57/vitesse-basic-layout" target="_blank" title="GitHub">
-            <div i-carbon-logo-github mr-3 /><div> Vitesse-Basic-Layout</div>
+            <div i-carbon-logo-github c-red-800 mr-3 /><div> Vitesse-Basic-Layout</div>
           </a>
         </nav>
       </div>
