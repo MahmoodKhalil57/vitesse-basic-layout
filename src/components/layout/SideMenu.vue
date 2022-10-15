@@ -19,9 +19,7 @@ const toggleLocales = () => {
 </script>
 
 <template>
-  <Transition
-    name="custom-slide"
-  >
+  <Transition name="custom-slide">
     <div v-if="props.modelValue" fixed>
       <div absolute class="backdrop" @click="toggleDrawer">
         <div h-screen w-screen bg-black op-80 />

@@ -7,14 +7,23 @@ const toggleDrawer = () => {
 </script>
 
 <template>
-  <main flex flex-col justify-between min-h-screen>
-    <div />
-    <div>
-      <RouterView />
+  <main flex flex-col justify-between min-h-screen lt-sm-bg-dark-800>
+    <div z-1 class="c-sticky -mt-3">
+      <div absolute w-full h-full bg-blue-800 />
+      <Header v-model="drawerOpen" />
     </div>
 
-    <Header v-model="drawerOpen" bg-blue-800 />
+    <RouterView sm-p-10 lt-sm-mx-5 lt-sm-my-15 bg-dark-800 rounded-5 />
+
     <Footer />
-    <SideMenu v-model="drawerOpen" />
+    <SideMenu v-model="drawerOpen" z-2 />
   </main>
 </template>
+
+<style scoped>
+.c-sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top:0px
+}
+</style>
