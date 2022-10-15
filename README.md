@@ -1,7 +1,7 @@
 # Built on
 
 <p align='center'>
-  <img src='https://vitess-basic-layout.netlify.app/src/assets/background/home-layout.jpg' alt='Vitesse - Opinionated Vite Starter Template' width='600'/>
+  <img src='/src/assets/VitesseBasicLayout.jpg' alt='Vitesse Basic Layout - Opinionated Vitesse Starter Template' width='600'/>
 </p>
 
 <p align='center'>
