@@ -20,15 +20,15 @@ const toggleLocales = () => {
 
 <template>
   <div flex flex-row w-full justify-center pt-4 pb-1>
-    <div pl-4 pr-2 w-full sm-hidden>
+    <div pl-4 pr-2 w-full sm="hidden">
       <div i-fa6-solid-bars-staggered icon-btn @click="toggleDrawer" />
     </div>
-    <div sm-pl-4 sm-pr-2 sm-w-full>
+    <div sm="pl-4 pr-2 w-full">
       <RouterLink icon-btn to="/" :title="t('button.home')">
         <Logo />
       </RouterLink>
     </div>
-    <nav text-xl lt-sm-hidden flex no-wrap>
+    <nav text-xl flex no-wrap lt-sm="hidden">
       <RouterLink icon-btn mx-2 to="/" :title="t('button.home')">
         <div i-carbon-campsite />
       </RouterLink>
