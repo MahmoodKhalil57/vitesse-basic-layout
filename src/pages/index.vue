@@ -13,7 +13,7 @@ const { t } = useI18n()
 
 <template>
   <div flex flex-col h-full w-full items-center>
-    <section flex flex-col items-center justify-center h-screen w-full p-5 class="c-bg-1">
+    <section flex flex-col items-center justify-center h-screen w-full p-5 bg-cstm-1>
       <div text-4xl>
         <div i-fa6-solid-paint-roller inline-block />
       </div>
@@ -60,7 +60,7 @@ const { t } = useI18n()
         </button>
       </div>
     </section>
-    <section flex flex-col items-center justify-center h-100 w-full p-5 class="c-bg-2">
+    <section flex flex-col items-center justify-center h-100 w-full p-5 bg-cstm-2>
       <div text-4xl>
         <div i-fa6-solid-paint-roller inline-block />
       </div>

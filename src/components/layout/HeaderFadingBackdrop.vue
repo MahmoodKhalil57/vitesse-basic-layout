@@ -24,7 +24,7 @@ onMounted(() => {
 
 <template>
   <Transition name="custom-test">
-    <div v-if="scrolled" absolute w-full h-full class="c-lo-1" />
+    <div v-if="scrolled" absolute w-full h-full bg-cstm-lo />
   </Transition>
 </template>
 
