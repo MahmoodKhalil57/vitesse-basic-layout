@@ -37,12 +37,8 @@ onMounted(() => {
 <style scoped>
 .custom-test-enter-active, .custom-test-leave-active {
   transition: all 0.2s ease-in-out;
-}
-/* delay leave of parent element */
-.custom-test-leave-active {
   transition-delay: 0.25s;
 }
-
 .custom-test-enter-from ,
 .custom-test-leave-to {
   opacity: 0;

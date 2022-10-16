@@ -5,8 +5,8 @@ const props = defineProps<{
 
 const emit = defineEmits(['update:modelValue'])
 
-const toggleDrawer = () => {
-  emit('update:modelValue', !props.modelValue)
+const closeDrawer = () => {
+  emit('update:modelValue', false)
 }
 
 const { t, availableLocales, locale } = useI18n()
@@ -21,13 +21,13 @@ const toggleLocales = () => {
 <template>
   <Transition name="custom-slide">
     <div v-if="props.modelValue" fixed>
-      <div absolute class="backdrop" @click="toggleDrawer">
+      <div absolute class="backdrop" @click="closeDrawer">
         <div h-screen w-screen bg-black op-80 />
       </div>
       <div w-60 absolute flex flex-col items-center justify-between h-screen bg-neutral-900 class="inner">
         <div flex flex-col w-full justify-center>
           <div flex flex-row justify-between w-full>
-            <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="toggleDrawer" />
+            <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="closeDrawer" />
             <RouterLink ma-2 icon-btn to="/" :title="t('button.home')">
               <Logo />
             </RouterLink>
@@ -75,7 +75,7 @@ const toggleLocales = () => {
 }
 /* delay leave of parent element */
 .custom-slide-leave-active {
-  transition-delay: 0.25s;
+  transition-delay: 0.35s;
 }
 
 .custom-slide-enter-from ,

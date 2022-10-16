@@ -6,7 +6,7 @@ const props = defineProps<{
 const emit = defineEmits(['update:modelValue'])
 
 const toggleDrawer = () => {
-  emit('update:modelValue', !props.modelValue)
+  emit('update:modelValue', true)
 }
 
 const { t, availableLocales, locale } = useI18n()
