@@ -1,8 +1,7 @@
 <script setup lang="ts">
-const emit = defineEmits(['update:modelValue'])
-
+const emit = defineEmits(['emitOpen'])
 const toggleDrawer = () => {
-  emit('update:modelValue', true)
+  emit('emitOpen')
 }
 
 const { t, availableLocales, locale } = useI18n()

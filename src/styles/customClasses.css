@@ -6,6 +6,10 @@
   background-color: var(--c-bg-2);
 }
 
+.c-bg-sidebar{
+  background-color: var(--c-bg-sidebar);
+}
+
 .c-lo-1{
   background-color: var(--c-lo-1);
 }

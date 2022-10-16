@@ -27,7 +27,7 @@ const toggleLocales = () => {
       <div absolute class="backdrop" @click="closeDrawer">
         <div h-screen w-screen bg-black op-80 />
       </div>
-      <div w-60 absolute flex flex-col items-center justify-between h-screen bg-neutral-900 class="inner">
+      <div w-60 absolute flex flex-col items-center justify-between h-screen class="inner c-bg-sidebar">
         <div flex flex-col w-full justify-center>
           <div flex flex-row justify-between w-full>
             <div icon-btn mt-2 mr-2 w-full i-maki-cross @click="closeDrawer" />

@@ -3,13 +3,15 @@
 html{
   --c-bg-1: #ffffff;
   --c-bg-2: #bbbbbb;
+  --c-bg-sidebar: #bbbbbb;
 
-  --c-lo-1: #008dff;
+  --c-lo-1: #181818;
 }
 
 html.dark {
   --c-bg-1: #121212;
   --c-bg-2: #181818;
+  --c-bg-sidebar: #181818;
 
-  --c-lo-1: #0004a7;
+  --c-lo-1: #3c3c43;
 }
