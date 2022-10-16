@@ -35,11 +35,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.c-sticky{
-  position: -webkit-sticky;
-  position: sticky;
-  top:0px
-}
 .custom-test-enter-active, .custom-test-leave-active {
   transition: all 0.2s ease-in-out;
 }
