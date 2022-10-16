@@ -1,19 +1,18 @@
 <script setup>
-import { onMounted } from 'vue'
-
 const emit = defineEmits(['emitScrolled'])
 const scrolled = $ref(false)
 const emitScrolled = srcl => emit('emitScrolled', srcl)
 const handleScroll = () => {
-  if (scrolled && window.scrollY < 30) {
+  const currentScrolled = window.scrollY >= 30
+  if (scrolled && !currentScrolled) {
     // eslint-disable-next-line no-const-assign
     scrolled = false
-    emitScrolled(scrolled)
+    emitScrolled(false)
   }
-  else if (!scrolled && window.scrollY >= 30) {
+  else if (!scrolled && currentScrolled) {
   // eslint-disable-next-line no-const-assign
     scrolled = true
-    emitScrolled(scrolled)
+    emitScrolled(true)
   }
 }
 
