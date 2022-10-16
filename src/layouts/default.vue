@@ -12,7 +12,7 @@ const isHome = computed(() => String(route.path) === '/')
 </script>
 
 <template>
-  <main flex flex-col justify-between min-h-screen>
+  <main flex flex-col justify-between min-h-screen bg-cstm-1>
     <div v-if="!isHome" z-1 class="c-sticky -mt-3">
       <!-- Default header -->
       <div absolute w-full h-full bg-cstm-lo />
