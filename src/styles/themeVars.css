@@ -1,14 +1,20 @@
 
 
 html{
+  --c-text-1: #000000;
+  --c-text-2: #fbfbfe;
+
   --c-bg-1: #ffffff;
   --c-bg-2: #bbbbbb;
-  --c-bg-sidebar: #bbbbbb;
+  --c-bg-sidebar: #33363d;
 
   --c-lo-1: #181818;
 }
 
 html.dark {
+  --c-text-1: #fbfbfe;
+  --c-text-2: #fbfbfe;
+
   --c-bg-1: #121212;
   --c-bg-2: #181818;
   --c-bg-sidebar: #181818;

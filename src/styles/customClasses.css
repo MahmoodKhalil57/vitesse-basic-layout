@@ -1,4 +1,11 @@
 
+.c-text-1{
+  color: var(--c-text-1);
+}
+.c-text-2{
+  color: var(--c-text-2);
+}
+
 .c-bg-1{
   background-color: var(--c-bg-1);
 }
