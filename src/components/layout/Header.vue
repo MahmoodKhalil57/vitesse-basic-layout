@@ -19,7 +19,7 @@ const toggleLocales = () => {
       <div i-fa6-solid-bars-staggered icon-btn @click="toggleDrawer" />
     </div>
     <div sm="pl-4 pr-2 w-full">
-      <RouterLink icon-btn to="/" :title="t('button.home')">
+      <RouterLink icon-btn op-100 to="/" :title="t('button.home')">
         <Logo />
       </RouterLink>
     </div>
