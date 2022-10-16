@@ -9,10 +9,13 @@ const closeDrawer = () => {
   emit('update:modelValue', false)
 }
 
+const closeDrawerDelayed = () => {
+  setTimeout(() => closeDrawer(), 200)
+}
+
 const { t, availableLocales, locale } = useI18n()
 
 const toggleLocales = () => {
-  // change to some real logic
   const locales = availableLocales
   locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
 }
@@ -37,7 +40,7 @@ const toggleLocales = () => {
         </div>
 
         <nav flex flex-col gap-4 pt-4 aria-label="Site menu">
-          <RouterLink icon-btn mx-2 flex flex-row to="/" label="Home" :title="t('button.home')">
+          <RouterLink icon-btn mx-2 flex flex-row to="/" label="Home" :title="t('button.home')" @click="closeDrawerDelayed">
             <div i-carbon-campsite mr-3 /> <div>Home</div>
           </RouterLink>
           <div b-b w-full h-1 />
@@ -49,7 +52,7 @@ const toggleLocales = () => {
             <div i-carbon-language mr-3 /> <div>Language</div>
           </a>
           <div b-b w-full h-1 />
-          <RouterLink icon-btn mx-2 flex flex-row to="/about" :title="t('button.about')">
+          <RouterLink icon-btn mx-2 flex flex-row to="/about" :title="t('button.about')" @click="closeDrawerDelayed">
             <div i-carbon-dicom-overlay mr-3 /> <div>Vue content</div>
           </RouterLink>
         </nav>
@@ -73,7 +76,7 @@ const toggleLocales = () => {
 .custom-slide-enter-active, .custom-slide-leave-active {
   transition: all 0.3s ease-in-out;
 }
-/* delay leave of parent element */
+
 .custom-slide-leave-active {
   transition-delay: 0.35s;
 }
@@ -83,12 +86,10 @@ const toggleLocales = () => {
   opacity: 0;
 }
 
-/* we can also transition custom-slide elements using custom-slide selectors */
 .custom-slide-enter-active .inner,
 .custom-slide-leave-active .inner {
   transition: all 0.3s ease-in-out;
 }
-/* delay enter of custom-slide element */
 .custom-slide-enter-active .inner {
   transition-delay: 0.25s;
 }
