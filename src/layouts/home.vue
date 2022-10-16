@@ -27,7 +27,7 @@ onMounted(() => {
       <Header v-model="drawerOpen" />
     </div>
 
-    <RouterView />
+    <RouterView max-w-full />
 
     <Footer class="c-lo-1" />
     <SideMenu v-model="drawerOpen" z-2 />

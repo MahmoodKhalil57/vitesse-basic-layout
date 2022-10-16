@@ -13,7 +13,9 @@ const toggleDrawer = () => {
       <Header v-model="drawerOpen" />
     </div>
 
-    <RouterView p-10 lt-md="mx-5 my-15" rounded-5 class="c-bg-2" />
+    <div flex items-center grow-1 rounded-5 m-10 p-4 class="c-bg-2">
+      <RouterView max-w-full />
+    </div>
 
     <Footer class="c-lo-1" />
     <SideMenu v-model="drawerOpen" z-2 />
