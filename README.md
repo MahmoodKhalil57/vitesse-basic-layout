@@ -41,7 +41,8 @@ An attempt at a personalized layout
 
 # Changes from Vitesse
 
+- Custom sidemenu (resize screen width to narrow to get option to toggle sidemenu)
 - Custom header
 - Custom footer
-- Custom sidemenu (resize screen width to narrow to get option to toggle sidemenu)
+- Custom layouts
 - Tried my best to only make necessary changes
