@@ -109,8 +109,3 @@ const { t } = useI18n()
     </section>
   </div>
 </template>
-
-<route lang="yaml">
-meta:
-  layout: home
-</route>
