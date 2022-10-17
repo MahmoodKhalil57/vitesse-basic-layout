@@ -3,7 +3,7 @@ const { t } = useI18n()
 </script>
 
 <template>
-  <div w-screen flex justify-center pt-2 gap-3 overflow-hidden sm="flex-row pb-2" lt-sm="flex-col">
+  <div flex justify-center pt-2 gap-3 overflow-hidden sm="flex-row pb-2" lt-sm="flex-col">
     <div flex w-full sm="ml-10 mt-8" lt-sm="justify-center">
       <RouterLink icon-btn lt-sm="scale-150" sm="scale-250" to="/" :title="t('button.home')">
         <Logo class="sm--mt-2" />
